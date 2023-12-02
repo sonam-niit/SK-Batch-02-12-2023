@@ -1,0 +1,32 @@
+h1 - h6--- all are Heading tags, as per the requirements you can use each Heading.
+
+p- used for Paragraph Tag, you can create Paragraphs
+
+pre- pre defined tag, whatever you will write, it will come as it is in browser.
+
+Hr- horizontal row (it will create one horizontal like)
+
+br- for breaking the row, it will break the row and content will come into new line.
+
+creating List
+-----------------------------------
+2 types
+
+ordered List: <ol>
+
+Unordered List: <ul>
+
+in both tag use <li> to add content of your list
+
+--- Description List
+<dl> description List
+<dt> description title
+<dd> description defination
+
+Creating Links:
+we can create using <a> tag Anchor Tag
+
+this tag is having 2 attributes
+href= hyper link refrence (when you click on this link what you want to open)
+
+target = how you want to open the like in the same page, in diffrent tab etc..
