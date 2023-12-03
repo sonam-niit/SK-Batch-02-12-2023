@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Music Include Demo</h1>
+    <hr>
+
+    <audio src="images/sample.mp3" controls autoplay muted loop ></audio>
+
+    <!-- 
+        src:: audo file which you want to play, give proper path to work
+        controls:: show all controls for play, pause, forward, backword, mute etc.. 
+        muted:: by default it will mute
+        loop:: repeate continusly
+        autoplay:: start playing automatically
+     -->
+
+     <audio controls autoplay muted loop>
+        <source src="images/sample.mp3">
+        <source src="images/sample.wave">
+     </audio>
+
+     <!-- Browser will check which source is supported it will play that source-->
+</body>
+</html>
