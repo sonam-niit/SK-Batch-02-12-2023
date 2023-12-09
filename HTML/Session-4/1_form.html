@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="save.php" method="get">
+        <div>
+            <label for="fname">FirstName:</label>
+            <input type="text" placeholder="Enter FirstName Here" id="fname" name="fname" />
+        </div>
+        <br>
+        <div> 
+            <label for="lname">LastName:</label>
+            <input type="text" placeholder="Enter LastName Here" id="lname" name="lname" />
+        </div>
+        <br>
+        <input type="submit" value="Save My Data"/>
+        <input type="reset" value="Reset Data"/>
+    </form>
+</body>
+<!-- 
+    when the form submites it will trigger the action attribute file.
+    when you create form by default it will use get method 
+    get data is visible in the URL
+
+    then how to pass the secret Data? using POST method
+ -->
+
+</html>

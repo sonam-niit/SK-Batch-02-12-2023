@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <hr>
+    <form>
+        <div>
+            <label for="fname">FirstName:</label>
+            <input type="text" placeholder="Enter FirstName Here" id="fname"/>
+            <label for="lname">LastName:</label>
+            <input type="text" placeholder="Enter LastName Here" id="lname" />
+            <label for="uname">UserName:</label>
+            <input type="text" placeholder="Enter UserName Here" id="uname" />
+        </div>
+        <br>
+        <div>
+            <label>Country</label>
+            <select>
+                <option>India</option>
+                <option>Australia</option>
+                <option>Canada</option>
+                <option selected>US</option>
+                <option>UK</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Gender</label>
+            <input type="radio" value="male" name="gender"> Male
+            <input type="radio" value="female" name="gender" checked> Female
+            <input type="radio" value="others" name="gender"> Others
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Langages Knows</label>
+            <input type="checkbox" value="eng" checked>English
+            <input type="checkbox" value="hindi">Hindi
+            <input type="checkbox" value="marathi">marathi
+            <input type="checkbox" value="tamil">Tamil
+        </div><br>
+        <div>
+            <label>Profile</label>
+            <input type="file" name="profile">
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob">
+            <label>Favourite Color</label>
+            <input type="color" name="favcolor" value="#ff0000">
+        </div><br>
+        <div>
+            <label>Marks Range</label>
+            <input type="range" min="0" max="100" value="60">
+            <label>Age</label>
+            <input type="number">
+            <label>Phone</label>
+            <input type="button" value="+91" disabled /><input type="tel" name="Phone">
+        </div><br>
+        <div>
+           Enter your Serch Text: <input type="search">
+           <!-- it will add X mark at the end of your filed when you type something -->
+        </div><br>
+        <div>
+            Address: 
+            <textarea rows="4" cols="30">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde repellat, error at cupiditate nesciunt repudiandae quos consequatur veniam odio dicta sint veritatis voluptatibus nulla aspernatur dolores quam saepe animi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sapiente esse voluptatibus quae illo odit laborum molestias repellat? Culpa iure molestiae facilis iste odit deleniti commodi esse aperiam quo. Fuga.
+            </textarea>
+        </div><br>
+        <input type="submit" value="Register">
+        <button type="reset">Reset</button>
+    </form>
+    
+</body>
+
+</html>

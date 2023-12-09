@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <hr>
+    <form action="server.js" method="post">
+        <div>
+            <label for="email">Email Id:</label>
+            <input type="email" placeholder="john.doe@example.com" id="email" required>
+            <!-- required says the fied is compsary means if you will leave it empty then it shows an error -->
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="************" id="password" required minlength="8">
+            <!-- minlength asking user to enter password atleast 8 char long -->
+        </div>
+        <br>
+        <button type="submit">Login Me</button>
+    </form>
+</body>
+</html>
