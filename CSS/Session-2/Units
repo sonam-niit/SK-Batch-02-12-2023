@@ -1,0 +1,21 @@
+Units
+--------------------------
+Pixels: smallest unit of Image
+absolute unit.
+
+Percentage: %
+relative unit / responsive unit
+it will take the given width the Percentage value
+
+em
+--------------------------
+relative to the font-size of the element which is used by the browser
+
+rem
+----------------------------
+root em
+take the default value of its root element
+
+vh(virtual Height) and vw(virtual width)
+----------------------------------------------
+Calculating the height and width based on the viewport
