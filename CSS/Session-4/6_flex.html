@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            gap:5px;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+        }
+        div div{
+            height: 100px;
+            width: 40%;
+            background-color: brown;
+        }
+        .main-container{
+            display: flex;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+        .main-container .left{
+            height: 150;
+            width: 20%;
+            background-color: coral;
+        }
+        .main-container .center{
+            height: 150;
+            width: 50%;
+            background-color: chartreuse;
+        }
+        .main-container .right{
+            height: 150;
+            width: 20%;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6">6</div>
+    </div>
+    <div class="main-container">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
