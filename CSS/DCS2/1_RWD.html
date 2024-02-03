@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            /* overflow: hidden; */
+        }
+
+        .column {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .main-container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .main-container .left{
+            width: 25%;
+            background-color: aqua;
+            padding: 15px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .main-container .left button{
+            display: block;
+            padding: 15px;
+            background-color: palevioletred;
+            font-size: 20px;
+
+        }
+        .main-container .main{
+            width: 50%;
+            background-color: darkgoldenrod;
+            padding: 15px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .main-container .right{
+            width: 25%;
+            background-color: chartreuse;
+            padding: 15px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .main-container .right button{
+            display: block;
+            padding: 15px;
+            background-color: palevioletred;
+            font-size: 20px;
+            
+        }
+
+        
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            .main-container .left{
+                display: none;
+            }
+            .main-container .right{
+                display: none;
+            }
+            .main-container .main{
+                width: 100%;
+            }
+        }
+
+        @media screen and(min-width:601px) and (max-width:820px) {
+            .column {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Heading</h2>
+            <p>This is my Paragraph</p>
+            <img src="https://rukminim2.flixcart.com/image/450/500/xif0q/shoe/r/e/m/-original-imagsfdvuffvqx4x.jpeg?q=90&crop=true"
+                alt="shoes1">
+        </div>
+        <div class="column">
+            <h2>Heading</h2>
+            <p>This is my Paragraph</p>
+            <img src="https://images.meesho.com/images/products/117525185/t8xwx_512.webp" alt="shoes1">
+        </div>
+        <div class="column">
+            <h2>Heading</h2>
+            <p>This is my Paragraph</p>
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18274390/2022/5/14/c64644f6-840f-4496-bb42-19359e9881771652523841987RoadsterMenBrownTexturedPUSneakers1.jpg"
+                alt="shoes1">
+        </div>
+        <div class="column">
+            <h2>Heading</h2>
+            <p>This is my Paragraph</p>
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18274390/2022/5/14/c64644f6-840f-4496-bb42-19359e9881771652523841987RoadsterMenBrownTexturedPUSneakers1.jpg"
+                alt="shoes1">
+        </div>
+    </div>
+    <div class="main-container" >
+        <div class="left">
+            <button>Info</button>
+            <button>Info</button>
+            <button>Info</button>
+            <button>Info</button>
+            <button>Info</button>
+            <button>Info</button>
+            <button>Info</button>
+        </div>
+        <div class="main">
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+            <div class="atricle">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est rerum totam aspernatur iste
+                    similique! Assumenda, sequi voluptatem, quam itaque tempore nulla voluptatum magni at beatae
+                    molestiae eligendi harum. Velit?</p>
+            </div>
+        </div>
+        <div class="right">
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+            <button>News</button>
+        </div>
+    </div>
+</body>
+
+</html>
