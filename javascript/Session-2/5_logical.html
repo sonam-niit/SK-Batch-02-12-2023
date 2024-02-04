@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = prompt("Enter any alphabet");
+        if (data == "A" || data == "a" || data == "E" || data == "E" ||
+            data == "I" || data == "i" || data == "O" || data == "o" ||
+            data == "U" || data == "u") {
+            document.write(`${data} is Vowel`);
+        } else {
+            document.write(`${data} is not Vowel`);
+        }
+
+        var degree= prompt("Enter Your Degree");
+        if(degree=="BSC" || degree=="BTECH"){
+            document.write(`<h3>${degree} is valid for Masters</h3>`);
+        }else{
+            document.write(`<h3>${degree} is not valid for Masters</h3>`);
+        }
+    </script>
+</body>
+
+</html>

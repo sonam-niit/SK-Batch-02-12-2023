@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Logic for finding the largest Number
+        var num1= prompt("Enter Number 1");
+        var num2= prompt("Enter Number 2");
+
+        if(num1>num2){
+            document.write(`<h3> ${num1} is Largest </h3>`)
+        }else{
+            document.write(`<h3> ${num2} is Largest </h3>`)
+        }
+        //Logic for Voting
+        var name=prompt("Enter your Name");
+        var age=prompt("Enter your Age");
+        if(age>=18){
+            document.write(`<h3> ${name} is valid for Vote </h3>`)
+        }else{
+            document.write(`<h3> ${name} is not valid for Vote, Kindly try after ${18-age} Years </h3>`)
+        }
+    </script>
+</body>
+</html>

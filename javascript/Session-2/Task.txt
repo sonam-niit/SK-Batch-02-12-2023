@@ -1,0 +1,24 @@
+1. Write a Program to get 3 inputs from User
+    Principle Amount, Rate of intrest, No of Years
+    calculate Simple intrest
+    formula si= (p*r*n) /100
+2. Write a program to get height and base of triangle and calculate area 
+
+    area= 1/2 * height * base
+
+3. WAP to get radius of circle and calculate circumference and area
+    var pi= 3.14;
+    circumference= 2 * PI * radius
+    area = PI * radius * radius
+
+4. WAP to get number from User and calculate cube and square for that number
+
+#IF ElSE Questions#
+
+1. WAP to check weather the given number is even or odd.
+   get the Reminder by dividing it with 2;
+   use % operator
+   if(num % 2 == 0)
+2. WAP to take input from user from Cost Price and Selling Price
+    if cp>sp then show profit also show how much profit
+    else show loss and show how much loss
