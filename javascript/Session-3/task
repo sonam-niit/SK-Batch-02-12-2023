@@ -1,0 +1,13 @@
+1. WAP to take number input the user and check if the number is Positive, Negative or Zero.
+
+2. WAP to check if the Number is Divisible By 5.
+
+3. WAP ask user to enter 3 sides values of triangle.
+    check either the triangle is equalateral, isosceles and scalene.
+
+4. WAP to ask user to enter PIN Number.
+    Fix some 4 pins in your code, 
+    if Entered pin is matching with any of that 4 pin than provide message successful
+    else show wrong PIN.
+
+    Hint: (OR operator)
