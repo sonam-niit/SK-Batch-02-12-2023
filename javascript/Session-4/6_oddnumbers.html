@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         document.write("<br>Odd Number <br>")
+         //i+=2 ==> i = i + 2
+        for(var i=1;i<=100;i+=2){
+            document.write(i+", ")
+        }
+        document.write("<br>EvenNumber <br>")
+        for(var i=2;i<=100;i+=2){
+            document.write(i+", ")
+        }
+        document.write("<br>")
+        var total=0;
+        for(var i=1;i<=10;i++){
+           // document.write(`old total ${total} + Value of I: ${i}`)
+            total+=i; //total=total+i
+           // document.write(` NewTotal: ${total}<br>`)
+        }
+        document.write('Sum is '+total+"<br>")
+        var sum=0
+        for(var i=1;i<=100;i++){
+           if(i%3==0){
+            document.write(i+", ")
+            sum+=i;
+           }
+        }
+        document.write("<br>Sum of 3 multiply numbers "+sum)
+        
+    </script>
+</body>
+</html>

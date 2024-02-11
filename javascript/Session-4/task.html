@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var input1 = prompt("enter first side");
+        var input2 = prompt("enter second side");
+        var input3 = prompt("enter third side");
+
+        var num1 = Number(input1);
+        var num2 = Number(input2);
+        var num3 = Number(input3);
+
+        if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+            if (num1 === num2 && num2 === num3 && num1 === num3) {
+                document.write(`<h1>This is equilatral triangle</h1>`)
+            } else if (num1 === num2 && num2 !== num3 || num2 === num3 && 
+            num3 !== num1 || num1 === num3 && num1 !== num2) {
+                document.write(`<h1>This is isoscalen triangle</h1>`)
+            } else if (num1 !== num2 && num2 !== num3 && num1 !== num3) {
+                document.write(`<h1>This is scalen triangle</h1>`)
+            }
+        }else{
+            alert("Enter Correct side values")
+        }
+
+
+    </script>
+</body>
+
+</html>
