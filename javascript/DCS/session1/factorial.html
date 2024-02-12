@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = Number(prompt("Enter any number"));
+        // var ogNum= num; //make a copy of user Input
+        // if (!isNaN(num)) {
+        //     var fact = 1;
+        //     while (num > 0) {
+        //         fact *= num; //fact = fact * num
+        //         num--; //decrease num by 1
+        //     }
+        //     document.write(`Factorial of ${ogNum} is ${fact}`)
+        // } else {
+        //     alert("Enter Numbers only")
+        // }
+        //For loop
+        if (!isNaN(num)) {
+            var fact = 1;
+            for (var i=1;i<=num;i++) {
+                fact *= i; //fact = fact * num
+            }
+            document.write(`Factorial of ${num} is ${fact}`)
+        } else {
+            alert("Enter Numbers only")
+        }
+    </script>
+</body>
+
+</html>
