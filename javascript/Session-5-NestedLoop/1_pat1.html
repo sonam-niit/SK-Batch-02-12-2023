@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var row=1;row<=5;row++){
+            document.write("<h3>")
+            for(var col=1;col<=5;col++){
+                //console.log(`row: ${row} col:${col}`)
+                document.write("# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+            }
+            document.write("</h3>")
+        }
+
+        for(var row=1;row<=5;row++){
+            var pattern="";
+            for(var col=1;col<=row;col++){
+                pattern+="* ";
+            }
+            console.log(pattern)
+        }
+        //While printing it in console direct log will give new line everytime
+        //you can attach all your pattern and log after the inner loop completes.
+    </script>
+</body>
+</html>

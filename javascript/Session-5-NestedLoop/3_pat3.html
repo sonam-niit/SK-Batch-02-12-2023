@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count=1;
+        for(var row=1;row<=5;row++){
+            document.write("<h3>");
+            var pattern="";
+            for(var col=1;col<=row;col++){
+                pattern+=`${count} `
+                count++;
+            }
+            console.log(pattern);
+            document.write(pattern+"</h3>");
+        }
+    </script>
+</body>
+</html>

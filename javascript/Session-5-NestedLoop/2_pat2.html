@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var row=1;row<=5;row++){
+            var pattern="";
+            for(var col=1;col<=row;col++){
+                pattern+=`${col} `;
+            }
+            console.log(pattern)
+        }
+
+        for(var row=1;row<=5;row++){
+            var pattern="";
+            for(var col=1;col<=row;col++){
+                pattern+=`${row} `;
+            }
+            console.log(pattern)
+        }
+        //Reverse
+        for(var row=5;row>0;row--){
+            var pattern="";
+            for(var col=1;col<=row;col++){
+                pattern+=`${row} `;
+            }
+            console.log(pattern)
+        }
+    </script>
+</body>
+</html>

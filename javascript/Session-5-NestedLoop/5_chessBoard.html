@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .white{
+            background-color: white;
+        }
+        .black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write("<table>")
+        for(var row=1;row<=8;row++){
+            document.write("<tr>")
+            let board='';
+            for(var col=1;col<=8;col++){
+                if((row+col)%2===0){
+                    board+=`<td class='white'></td>`; //even left blank
+                }else{
+                    board+=`<td class='black'></td>` //odd filled with color
+                }
+            }
+            document.write(board+"</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

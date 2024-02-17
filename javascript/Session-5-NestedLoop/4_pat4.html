@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var row=1;row<=8;row++){
+            let board='';
+            for(var col=1;col<=8;col++){
+                if((row+col)%2===0){
+                    board+='0'; //even left blank
+                }else{
+                    board+='#' //odd filled with color
+                }
+            }
+            console.log(board);
+        }
+    </script>
+</body>
+</html>
