@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 30px;
+        }
+
+        input {
+            display: block;
+            height: 20px;
+            width: 40%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .btn{
+            margin-top: 20px;
+            display: inline-block;
+            width: 20%;
+            height: 50px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Enter First Name" id="fname" />
+        <input type="text" placeholder="Enter Last Name" id="lname" />
+        <button onclick="display()" class="btn">Show FullName</button>
+        <button onclick="clearData()" class="btn">Clear Data</button>
+        <h3 id="message"></h3>
+    </div>
+    <script>
+        //Read tags (elements)
+        const fname=document.getElementById('fname');
+        const lname=document.getElementById('lname');
+        const message=document.getElementById('message');
+
+        function display(){
+            message.innerHTML= fullName(fname.value,lname.value);
+        }
+        function clearData(){
+            fname.value="";
+            lname.value="";
+            message.innerHTML="";
+        }
+        function fullName(fname,lname){
+            return `Welcome ${firstName} ${lastName}`;
+        }
+    </script>
+</body>
+
+</html>

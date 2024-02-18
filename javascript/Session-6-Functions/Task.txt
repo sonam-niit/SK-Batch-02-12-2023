@@ -1,0 +1,30 @@
+1. Write a function which takes one parameter and check if the user is valid for vote.
+    checkValidity(45) --> it will show me user is valid for vote
+    checkValidity is the function name
+    45 is argument which i have passed as parameter
+
+    function checkValidity(age){
+        //write your logic here
+    }
+
+2. Write a function accpets one parameter and calculate square
+    function square(num){
+        //write logic with return keyword
+    }
+    //similar like above also write function for calculating cube
+
+3. Write a function takes one parameter and convert celcius to feranhit.
+    
+    function toFeranHit(celcius){
+        //write conversion Logic
+    }
+
+4. Write a function which takes one parameter and check its even or odd?
+    function evenOrOdd(num){
+        //logic
+    }
+5. Write a function which takes 3 parameter and calculate its average.
+
+    function average(num1,num2,num3){
+        //write logic
+    }

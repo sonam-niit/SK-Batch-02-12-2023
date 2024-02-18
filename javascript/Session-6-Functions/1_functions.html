@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- When you click on this button this function triggers -->
+    <button onclick="print()">Click Me</button>
+    <button onclick="hello()">Hello World</button>
+    <button onclick="clearData()">Clear Text</button>
+    <h3 id="msg"></h3>
+    <script>
+        //function defination
+        function print(){
+            alert("Print called")
+            console.log("Function called");
+        } function hello(){
+            alert("Hello called")
+            document.getElementById('msg').innerHTML="Hello World";
+        }function clearData(){
+            alert("Clear Data called")
+            document.getElementById('msg').innerHTML=""
+        }
+        //calling a function
+        print(); //browser call this function when the script loaded
+    </script>
+</body>
+</html>

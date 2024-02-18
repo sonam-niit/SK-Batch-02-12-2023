@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function simpleIntrest(principle,noOfYear,rateOfInterst=4){
+
+            return (principle*noOfYear*rateOfInterst)/100;
+        }
+
+        alert(simpleIntrest(5000,5,4.5))//take ROI=4.5
+        alert(simpleIntrest(5000,5))//it will ROI=4 (default)
+        alert(simpleIntrest(
+            prompt('Enter Principle Amount'),
+            prompt('Enter No of Years'),
+            prompt('Enter rate of Intrest')
+        ));
+    </script>
+</body>
+</html>
