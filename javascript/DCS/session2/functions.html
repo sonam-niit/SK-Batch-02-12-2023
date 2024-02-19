@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter any number" id="num" value="1">
+        <select id="op">
+            <option value="1">Square</option>
+            <option value="2">Cube</option>
+            <option value="3">Even Odd</option>
+            <option value="4">Age Validity</option>
+        </select>
+        <button onclick="perform()">Submit</button>
+        <h3 id="res"></h3>
+    </div>
+
+    <script>
+        const input = document.getElementById('num');
+        const operator = document.getElementById('op');
+        const res = document.getElementById('res');
+        function perform() {
+            const num = input.value;
+            const op = Number(operator.value);
+            switch (op) {
+                //Here it will call square function and print the return result directly
+                case 1: res.innerHTML = `Square of ${num} is ${square(num)}`;
+                    break;
+                case 2: res.innerHTML = `Cube of ${num} is ${cube(num)}`;
+                    break;
+                //here its calling function which is returning true or false
+                //based on that my ternary operator printing even or odd
+                case 3: res.innerHTML = `${num} is ${checkEvenOdd(num) ? 'Even' : 'Odd'}`;
+                    break;
+                case 4: res.innerHTML = `${num} is ${checkValidity(num) ? 'Valid' : 'Not Valid'} for Vote`;
+                    break;
+
+            }
+        }
+        function square(num) {
+            return num * num;
+        }
+        function cube(num) {
+            return num * num * num;
+        }
+        function checkEvenOdd(num) {
+            return parseInt(num) % 2 == 0;
+        }
+        function checkValidity(age) {
+            return age >= 18;
+        }
+
+    </script>
+</body>
+
+</html>

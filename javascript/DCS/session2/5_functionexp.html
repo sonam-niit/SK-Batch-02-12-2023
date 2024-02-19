@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //test(); //hoisting is not allowed
+
+        //function expression
+        const test = function() {
+            console.log("Test function called");
+        }
+        test();
+
+        //if you write expression using var keyword then the error is test is not function
+        //if you write using const then the error is "cannot access test before its initialization"
+
+    </script>
+</body>
+
+</html>

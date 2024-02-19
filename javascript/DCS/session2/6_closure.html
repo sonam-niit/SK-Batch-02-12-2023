@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function cube(num) {
+            const res = num * num * num;//scope block
+            return function () { return res }
+        }
+
+        const cubeOf3=cube(3);
+        console.log(cubeOf3());//called the returned function
+
+    </script>
+</body>
+
+</html>

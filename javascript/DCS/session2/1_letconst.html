@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if you have created any variable without any function or block
+        //like loop block, if block else block 
+        //its become global
+        let name="Sonam Soni"; //global
+        document.write(`<h3>Welcome ${name}</h3>`);
+        name="Monu Sharma";
+        document.write(`<h3>Welcome ${name}</h3>`);
+        const pi=3.14;
+        document.write(`<h3>value of Pi ${pi}</h3>`);
+        //pi=22/7; //this line throw an error
+        ///document.write(`<h3>Value of Pi ${pi}</h3>`);
+
+        function test(){
+            let firstName="Test"; //block scope
+            document.write(`<h3>Welcome ${firstName}</h3>`);
+        }
+        test(); //call function
+        document.write(`<h3>Welcome ${firstName}</h3>`);
+    </script>
+</body>
+</html>

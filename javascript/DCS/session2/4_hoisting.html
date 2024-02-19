@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(`number is ${num}`);//undefined
+        var num=10;
+        console.log(`number is ${num}`);
+
+        //console.log(`number is ${test}`); //this line will throw an error
+        //Hoisting is not possible with Let and const
+        //only possible with Var
+        let test=10;
+        console.log(`number is ${test}`);
+        //hoisting possible with function
+        print(); //calling a function
+        function print(){
+            console.log(`Test Function Called`);
+        }
+    </script>
+</body>
+</html>
