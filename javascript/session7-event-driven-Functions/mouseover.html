@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 20px;
+            background-color: coral;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 onmouseover="showDiv()" onmouseout="hideDiv()">Mouseover Event</h1>
+    <div id="info">
+        <h3>Welcome to Skill Academy</h3>
+        <p>Learn MERN stack development</p>
+    </div>
+    <script>
+        function showDiv(){
+            document.getElementById('info').style.display='block';
+        }
+        function hideDiv(){
+            document.getElementById('info').style.display='none';
+        }
+    </script>
+</body>
+</html>

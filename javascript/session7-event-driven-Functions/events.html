@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            height: 30px;
+            width: 30%;
+            padding: 5px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your Name" id="fname" onkeyup="convertToUpperCase()" />
+    <br><br>
+    <input type="text" placeholder="Enter your Name" id="lname" onchange="changeBackGroundColor()"/>
+    <script>
+        function convertToUpperCase(){
+            const fname=document.querySelector('#fname');
+            fname.value=fname.value.toUpperCase();
+        }
+        //this will trigger when you type something and enter in text field
+        function changeBackGroundColor(){
+            const lname=document.querySelector('#lname');
+            lname.style.backgroundColor='yellow';
+        }
+
+    </script>
+</body>
+</html>

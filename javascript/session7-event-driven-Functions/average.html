@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Average of 3 Numbers</h3>
+    <hr>
+    <input placeholder="Enter First Number" id="num1"><br><br>
+    <input placeholder="Enter Second Number" id="num2"><br><br>
+    <input placeholder="Enter Third Number" id="num3"><br><br>
+    <button onclick="calculate()" >Calculate From input</button>
+    <button onclick="demo()" >Calculate From prompt</button>
+    <h4 id="res"></h4>
+    <script src="script.js"></script><!--External Javascript-->
+    <script>
+        function calculate(){
+            const num1=Number(document.getElementById('num1').value);
+            const num2=Number(document.getElementById('num2').value);
+            const num3=Number(document.getElementById('num3').value);
+            const result=Math.round(average(num1,num2,num3));//function calling
+            document.getElementById('res').innerHTML=`Average of ${num1}, ${num2},
+            ${num3} is ${result}`
+        }
+        function demo(){
+            const num1=Number(prompt('Enter First Number'));
+            const num2=Number(prompt('Enter Second Number'));
+            const num3=Number(prompt('Enter Third Number'));
+            alert(`Average is ${(average(num1,num2,num3).toFixed(2))}`);
+            //to round with 2 decimal numbers use toFixed()
+        }
+
+    </script>
+</body>
+</html>

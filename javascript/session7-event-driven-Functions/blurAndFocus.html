@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            height: 30px;
+            width: 30%;
+            padding: 5px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your Name" id="fname" />
+    <br><br>
+    <input type="text" placeholder="Enter your Name" id="lname"/>
+    <script>
+        const fname=document.querySelector('#fname');
+        const lname=document.querySelector('#lname');
+        fname.addEventListener('focus',function(){
+            fname.style.border='2px solid blue'
+        });
+        fname.addEventListener('blur',function(){
+            fname.style.border='none';
+            fname.value= fname.value.toUpperCase();
+        });
+        lname.addEventListener('focus',function(){
+            lname.style.border='2px solid blue'
+        });
+        lname.addEventListener('blur',function(){
+            lname.style.border='none';
+            lname.value= lname.value.toUpperCase();
+        });
+
+        
+        
+    </script>
+</body>
+</html>

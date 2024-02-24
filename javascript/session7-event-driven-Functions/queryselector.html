@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="msg">Hello All</h1>
+    <button>Click Me</button>
+    <script>
+        const btn= document.querySelector('button');//selecting by tag
+        //applied click listener using EventListener
+        btn.addEventListener('click',function(){
+            document.querySelector('#msg').textContent="Good Evening...!!!";
+            document.querySelector('#msg').style.color='red';
+        })
+    </script>
+</body>
+</html>
