@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[];//create Empty array
+        const length= prompt('Enter No elements you wnat to insert');
+        for(let i=0;i<length;i++){
+            array[i]=prompt("Enter student name");
+        }
+
+        document.write(`<h3>${array}</h3><hr><h2>Show All</h2>`);
+        for(let name of array){
+            document.write(`<h3>${name}</h3>`)
+        }
+
+    </script>
+</body>
+</html>

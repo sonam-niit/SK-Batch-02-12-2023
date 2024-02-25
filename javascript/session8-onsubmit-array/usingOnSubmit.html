@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form novalidate onsubmit="loginUser(event)" >
+        <input type="email" placeholder="john.doe@gmail.com" id="email" required />
+        <span id="erroremail"></span>
+        <br><br>
+        <input type="password" placeholder="*************" id="pass" required />
+        <span id="errorpass"></span>
+        <br><br>
+        <input type="submit" value="Login" />
+    </form>
+    <script>
+        function loginUser(event) {
+
+            event.preventDefault();//stopped the default behaviour of form in browser
+            const email = document.querySelector('#email');
+            const pass = document.querySelector('#pass');
+            const emailerr=document.querySelector('#erroremail');
+            const passerr=document.querySelector('#errorpass');
+
+            if (email.value == '') {
+                emailerr.textContent = 'Email cannot be Empty';
+            }else if(pass.value==''){
+                emailerr.textContent=''
+                passerr.textContent = 'Password cannot be Empty';
+            }
+            else {
+                passerr.textContent=''
+                if (email.value == 'admin@gmail.com' && pass.value == '123456') {
+                    alert('Login Successful...!!')
+                } else {
+                    alert('Invalid credentials, try again')
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

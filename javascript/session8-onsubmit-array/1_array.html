@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[1,23,4,5,6,7,8,9];
+        document.write(`<h3>Array Length: ${array.length} </h3>`);
+        //access any element directly
+        document.write(`<h3>Element at Index 3: ${array[3]} </h3>`);
+        document.write(`<h3>Element at Index 0: ${array[0]} </h3>`);
+        //access all elements
+        document.write(`<h3>Array Elements</h3><hr>`);
+        for(let i=0;i<array.length;i++){
+            document.write(`<h4>Index: ${i}: Value: ${array[i]} </h4>`);
+        }
+        document.write(`<h4>${array}</h4>`);//object converted intostring
+        console.log(array); //you can see in the form of object
+        console.log("Array: "+array);//if you concat then it converts to string
+    </script>
+</body>
+</html>
