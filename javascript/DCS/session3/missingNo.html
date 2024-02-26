@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function missingNo(array){
+            const n= array.length;
+            const actualSum= (n*(n+1))/2;
+
+            let sum=0;
+            for(let x of array){
+                sum+=x;
+            }
+            const missingNumber= actualSum-sum;
+            return missingNumber;
+        }
+
+        console.log(missingNo([1,0,5,2,3,8,7,6]));
+        console.log(missingNo([1,0,5,2,3,8,6,4,9]));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fibbonacci(length){
+            let a=0;
+            let b=1;
+            let result=`${a}, ${b}, `;//attaching initial value of a and b to result
+            let i=3;
+            while(i<=length){
+                let c=a+b;
+                result+=`${c}, `;
+                a=b;
+                b=c;
+                i++;
+            }
+            document.write(`<h3>${result} </h3>`)
+        }
+
+        fibbonacci(20);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[3,6,4,1,7,9,5]; //length=7
+        document.write(`<h3>Original Array ${array}</h3>`);
+
+        const newArray=[]; //empty array
+        let j=0;
+        for(let i=array.length-1;i>=0;i--){
+           //document.write(`<h3>${array[i]}</h3>`)
+           newArray[j]=array[i];
+           j++;
+        }
+        document.write(`<h3>Reversed Array ${newArray}</h3>`);
+    </script>
+</body>
+</html>
