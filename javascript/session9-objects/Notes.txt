@@ -1,0 +1,13 @@
+Objects
+--Object is the complex datatype which allows you to store collections of
+data in the key value pair.
+
+How key value pairs?
+- id: 1
+- name : "Sonam"
+id is key and value is 1 and name is key and value is "sonam"
+
+-key and value pair must be seperate by : symbol
+-multiple key value pairs must be seperated by comma ,
+- Object you should write in {} (flower bracket)
+
