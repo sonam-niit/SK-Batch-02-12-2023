@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border:2px solid red;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+    <script src="1_objectsarray.js"></script>
+    <script>
+        const tbody= document.querySelector('#data');
+        let html='';
+        for (let student of students) {
+            html+='<tr>';
+            for (let key in student) {
+                html+=  `<td>${student[key]}</td>`
+            }
+            html+=`</tr>`
+        }
+        tbody.innerHTML=html;
+    </script>
+
+</body>
+
+</html>
