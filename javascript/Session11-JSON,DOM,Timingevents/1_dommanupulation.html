@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <button onclick="add()">Add Pragraph and Heading</button>
+
+    <script>
+        function add() {
+            const div = document.querySelector('#container');
+            for (let i = 1; i <= 3; i++) {
+                const heading = document.createElement('h1');
+                heading.textContent = `Welcome to Skill Academy User${i}`;
+                div.appendChild(heading);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

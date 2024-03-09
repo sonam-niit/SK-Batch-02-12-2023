@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Alex",
+        "designation":"JR. Developer",
+        "salary":45345
+    },
+    {
+        "id":2,
+        "name":"Bob",
+        "designation":"SR. Developer",
+        "salary":85345
+    },
+    {
+        "id":3,
+        "name":"John",
+        "designation":"Automation Tested",
+        "salary":56435
+    }
+]

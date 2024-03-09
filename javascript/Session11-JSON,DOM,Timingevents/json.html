@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="name" id="name">
+    <input type="number" age="age" id="age">
+    <button onclick="save()">Save</button>
+
+    <script>
+        function save() {
+            const input1=document.getElementById('name').value;
+            const input2=document.getElementById('age').value
+            let oldData=localStorage.getItem('students');
+            if(!oldData){
+                oldData="[]";
+            }
+            let array=JSON.parse(oldData);
+            array.push({name:input1,age:input2})
+            localStorage.setItem('students',JSON.stringify(array));
+            alert("Data Saved")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+JSON: javascript Object Notation
+It looks similar like JS object the only diffrence is in JS object keys you
+can write without quotes but in JSON keys must be enclosed with quotes.
