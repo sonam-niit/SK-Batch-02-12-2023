@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertToObject(array){
+            const obj={};
+            for(let r=0;r<array.length;r++){
+                    let key= array[r][0];
+                    let value= array[r][1];
+                    obj[key]=value;// obj["name"]="sonam" 
+            }
+            return obj;
+        }
+        const TwoDArray=[
+            ['name','sonam'],
+            ['age',34],
+            ['email','sonam@gmail.com']
+        ];
+        console.log(convertToObject(TwoDArray));
+    </script>
+</body>
+</html>
+
+
+
+

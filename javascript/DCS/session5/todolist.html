@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter todo" id="todo"/>
+    <button onclick="save()">Add Todo</button>
+    <h3>All todo List</h3>
+    <hr>
+    <div id="data"></div>
+    <script>
+        function save(){
+            const todo=document.querySelector('#todo');
+            let todos=localStorage.getItem('todos');
+            if(todos==null){
+                todos=[];//empty array
+            }else{
+                todos=JSON.parse(todos);
+            }
+            todos.push(todo.value);
+            localStorage.setItem('todos',JSON.stringify(todos));
+            todo.value=''
+            getData()
+        }
+
+        function getData(){
+            const div= document.querySelector('#data');
+            let todos=localStorage.getItem('todos');
+            if(todos==null){
+                div.innerHTML=`<h4>List is Empty</h4>`
+            }else{
+                todos=JSON.parse(todos);
+                let html=''
+                for(let t of todos){
+                    html+=`<p>${t}</p>`;
+                }
+                div.innerHTML=html;
+            }
+        }
+        getData()
+    </script>
+</body>
+</html>
