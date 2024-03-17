@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day</title>
+</head>
+<body>
+    <h1>Astronomy Picture of the Day</h1>
+    <h2 id="title"></h2>
+    <h3 id="date"></h3>
+    <p id="desc"></p>
+    <img id="image" height="400">
+
+    <button onclick="fetchData()">Fetch Data</button>
+    <script>
+        async function fetchData(){
+            try {
+                const resp=await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+                const json= await resp.json();
+                console.log(json);
+                document.querySelector('#title').innerHTML=json.title;
+                document.querySelector('#date').innerHTML=json.date;
+                document.querySelector('#desc').innerHTML=json.explanation;
+                const img= document.querySelector('#image');
+                img.setAttribute('src',json.url);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
+</body>
+</html>
