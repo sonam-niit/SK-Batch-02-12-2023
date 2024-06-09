@@ -1,0 +1,65 @@
+Local Modules
+----------------------
+What we can create and use its called Local.
+
+For that we can create multiple files where we can create no of functions, variables, classes etc..
+which we can export and use to another file by Import.
+
+Import/ Export in ES5
+------------------------------
+we are using module.exports= { add,sub,mul,div}
+
+To use above file we need to import using require keyword --> const { add,mul,div,sub } = require("../Modules/File1");
+
+if you want to export one default function then module.exports = fetchData
+
+To use above function: --> const fetchData = require("../Modules/file2");
+
+if you want to export a function without name: 
+
+module.exports= function(name){
+    return "Hello.. "+name;
+}
+
+to use it you can give any name: const sayHi= require('../Modules/file3');
+
+How to work with ES6
+------------------------------------------------
+
+create folder named myProject
+move to that folder from terminal using
+cd myProject
+-- create package.json fiel
+>npm init -y open the file and add "type":"module"
+--create module1.mjs file add the code shown here
+--create app.js file and import the exported functions
+
+Here also we can export multiple functions and one can be a default function 
+
+to export default use below syntax
+
+function specialFuction(){
+    console.log("Hello from Special..");
+}
+export default specialFuction;
+
+To import : import specialFuction from "./module2.mjs";
+
+For multiple functions you can export directly and import in the form of object
+
+export function add(num1,num2){
+    return num1+num2;
+}
+export function sub(num1,num2){
+    return num1-num2;
+}
+export function mul(num1,num2){
+    return num1*num2;
+}
+
+To import above functions:: import { add, mul, sub } from "./module1.mjs";
+
+
+
+
+
