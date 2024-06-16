@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Laptop",
+        "brand":"Lenovo ThinkPad",
+        "price":56789,
+        "rating":4.7
+    },
+    {
+        "id":2,
+        "name":"IPhone 15 pro",
+        "brand":"Apple",
+        "price":123000,
+        "rating":4.9
+    },
+    {
+        "id":3,
+        "name":"Toaster",
+        "brand":"HomeAppliences",
+        "price":999,
+        "rating":4.4
+    },
+    {
+        "id":4,
+        "name":"Headphones",
+        "brand":"Boat",
+        "price":2999,
+        "rating":4.3
+    }
+]
