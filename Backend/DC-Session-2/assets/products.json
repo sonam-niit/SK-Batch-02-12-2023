@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "category": "Electronics",
+        "price": 25.99,
+        "stock": 150,
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "name": "Bluetooth Headphones",
+        "category": "Electronics",
+        "price": 79.99,
+        "stock": 85,
+        "rating": 4.2
+    },
+    {
+        "id": 3,
+        "name": "Coffee Maker",
+        "category": "Home Appliances",
+        "price": 99.95,
+        "stock": 60,
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Yoga Mat",
+        "category": "Fitness",
+        "price": 20.00,
+        "stock": 200,
+        "rating": 4.8
+    },
+    {
+        "id": 5,
+        "name": "Water Bottle",
+        "category": "Fitness",
+        "price": 15.49,
+        "stock": 300,
+        "rating": 4.6
+    },
+    {
+        "id": 6,
+        "name": "Laptop Stand",
+        "category": "Office Supplies",
+        "price": 35.00,
+        "stock": 120,
+        "rating": 4.4
+    },
+    {
+        "id": 7,
+        "name": "Notebook",
+        "category": "Office Supplies",
+        "price": 5.99,
+        "stock": 500,
+        "rating": 4.1
+    },
+    {
+        "id": 8,
+        "name": "Desk Lamp",
+        "category": "Home Decor",
+        "price": 45.00,
+        "stock": 90,
+        "rating": 4.3
+    },
+    {
+        "id": 9,
+        "name": "Electric Toothbrush",
+        "category": "Personal Care",
+        "price": 29.99,
+        "stock": 130,
+        "rating": 4.9
+    },
+    {
+        "id": 10,
+        "name": "Running Shoes",
+        "category": "Footwear",
+        "price": 120.00,
+        "stock": 75,
+        "rating": 4.7
+    }
+]

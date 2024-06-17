@@ -1,0 +1,9 @@
+[
+    {
+        "id":1,
+        "name":"book1",
+        "author":"author1",
+        "publicationdate":"2002-05-14",
+        "genre":"Fiction"
+    }
+]
