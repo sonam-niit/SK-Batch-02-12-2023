@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fetchData()">
+        fetchData</button>
+    <script>
+        async function fetchData(){
+            try {
+                const resp=await fetch('http://localhost:5000/users');
+                const data=await resp.json();
+                console.log(data);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
+</body>
+</html>
