@@ -1,0 +1,18 @@
+{
+  "name": "todoappapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-persist": "^4.0.1",
+    "nodemon": "^3.1.4"
+  }
+}
