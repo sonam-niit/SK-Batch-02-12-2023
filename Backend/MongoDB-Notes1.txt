@@ -1,0 +1,165 @@
+MongoDB
+------------------
+
+Non- SQL database means its not a structured database
+
+It is storing the data in the form of Document, that's why it is called document based Database.
+
+How the document look like: JSON or BSON (Binary JSON) format
+
+Database we can create
+	in one database we can create multiple collections
+	in one collection we can add multiple documents (JSON formatted document)
+
+How to create Database:
+	> use dbname
+	
+	(means if the database is already available it will use the same otherwise it will create new database.
+
+	>use skillacademy;
+	(your db will get changed)
+
+	>let's create collection and insert some data inside the same.
+
+	>db.users.insertOne({name:'sonam',email:'sonam@gmail.com',country:'India',age:45})
+
+	To find all records: db.users.find();
+
+How to Insert Many JSON Objects?
+
+>db.users.insertMany([
+	{name:'alex',email:'alex@gmail.com',country:'US',age:28},
+	{name:'bob',email:'bob@gmail.com',country:'UK',age:29},
+	{name:'catty',email:'catty@gmail.com',country:'US',age:40},
+	{name:'john',email:'john@gmail.com',country:'UK',age:44},
+	])
+------------------------------------------------------------------------
+to fetch data based on their names
+
+db.users.find({name:'sonam'})
+
+to fetch data based on email
+
+db.users.find({email:'alex@gmail.com'})
+
+Data projection to fetch limited fields
+---------------------------------------------------
+>db.users.find({},{name:1,country:1})
+
+(fetch all data and fetch only name and country of them, it will also fetch _id by default)
+
+If you don't want id them make it 0
+
+>db.users.find({},{name:1,country:1,_id:0})
+
+If I want only sonam's details with name and country then
+
+>db.users.find({name:'sonam'},{name:1,country:1,_id:0})
+
+If you want to fetch all fields except password then you can keep it 0
+
+>db.users.find({},{password:0})
+
+======================================================================================
+
+Operators
+----------------------------------
+lt, gt, lte, gte, eq, ne
+
+>db.users.find({age:{$lt:40}}) (fetch all users whose age is less than 40) 
+
+>db.users.find({age:{$lt:40}},{name:1,email:1,_id:0}) (fetch all users whose age is less than 40 and fetch only name and email) 
+
+>db.users.find({age:{$lte:40}})
+
+>db.users.find({age:{$gt:40}})
+
+>db.users.find({age:{$gte:40}})
+
+>db.users.find({age:{$eq:40}})
+
+>db.users.find({age:{$ne:40}},{name:1,_id:0})
+
+Logical Operators
+---------------------------------
+$and, $or
+
+I want fetch data from users collection where user must be not elder than 40 and must stay in US.
+
+>db.users.find({
+	$and: [
+		{age:{$lt:40}},
+		{country:'US'}
+	]
+})
+
+>db.users.find({
+	$or: [
+		{age:{$lt:40}},
+		{country:'US'}
+	]
+})
+===============================================================================
+Update Data
+
+>db.users.updateOne({name:'sonam'},{$set:{age:30}})
+
+>db.users.updateMany({age:{$gte:40}},{$set:{role:'admin'}})
+
+>db.users.updateMany({age:{$lt:40}},{$set:{role:'user'}})
+
+>db.users.updateMany({},{$set:{status:'active'}})
+
+>db.users.find({},{name:1,role:1,_id:0})
+
+----------------------------------------------------------
+insertMany([{},{},{}]) //array of many objects
+insertOne({}) //single object
+
+
+==========================================================================
+calculating no of documents
+
+>db.users.countDocuments()
+>db.products.countDocuments()
+
+sort data in ascending or descending order
+
+>db.users.find().sort({age:1}) //ascending
+>db.users.find().sort({age:-1}) //descending
+>db.users.find().sort({name:-1}) //sort based on name
+
+if you want to limit the data fetching means fetch only first 3 data
+
+>db.users.find().limit(3);
+
+>db.users.find().sort({age:1}).limit(3);
+
+//if you want to skip first 2 and then fetch next 2
+
+>db.users.find().sort({age:1}).skip(2).limit(2);
+
+----------------------------------------------------------------------
+Delete Data
+
+>db.users.deleteOne({name:'sonam'})
+
+>db.users.deleteMany({age:{$lt:30}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
