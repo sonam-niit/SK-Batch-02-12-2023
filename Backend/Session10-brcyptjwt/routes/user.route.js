@@ -2,6 +2,7 @@ const express= require('express');
 const UserModel= require('../models/user.model');
 const bcrypt= require('bcrypt');
 const jwt= require('jsonwebtoken');
+const auth = require('../middleware/auth');
 const router= express.Router();
 
 router.post('/register',async(req,res)=>{
@@ -51,6 +52,10 @@ router.post('/login',async(req,res)=>{
         console.log(error);
         res.status(500).send({message:'Internal error occured'})
     }
+})
+router.get('/profile',auth,async(req,res)=>{
+    const data= req.user;
+    res.send({message:'Welcome to your profile',data})
 })
 
 module.exports= router;
