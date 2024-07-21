@@ -1,0 +1,37 @@
+import logo from './logo.svg';
+import './App.css';
+
+//JSX: javascript extention
+function App() {
+  const name = "Sonam Soni";
+  const loggedIn = true;
+  const arr = [
+    { id: 1, name: 'alex' }, 
+    { id: 2, name: 'bob' }, 
+    { id: 3, name: 'catt' }
+  ]
+  return (
+    <div className="App">
+      <h1>First App</h1>
+      <h2>Welcome {name}</h2>
+      <button>{loggedIn ? 'Logout' : 'Login'}</button>
+      <table>
+        <thead>
+          <tr><th>Id</th><th>Name</th></tr>
+        </thead>
+        <tbody>
+          {
+            arr.map(item => (
+              <tr>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default App;
