@@ -9,13 +9,12 @@ function TodoApp() {
     const handleDelete = (id) => {
         setTodos(todos.filter(item => item.id != id));
     }
-    const handleComplete=(id)=>{
-        const foundIndex=todos.find(item=>item.id==id);
-        const found=todos.find(item=>item.id==id);
-        found.completed=true;
-        // todos.splice(foundIndex,1);
-        // setTodos([...todos,found]);
-    }
+    const handleComplete = (id) => {
+        const updatedTodos = todos.map(item => 
+            item.id === id ? { ...item, completed: true } : item
+        );
+        setTodos(updatedTodos);
+    };
     return (
         <>
             <h3>Todo App</h3><hr />
@@ -28,7 +27,9 @@ function TodoApp() {
             <ul>
                 {
                     todos.map(item => (
-                        <li key={item.id} onClick={()=>handleComplete(item.id)}>{item.id}- {item.name}
+                        <li key={item.id} onClick={()=>handleComplete(item.id)}
+                        style={{textDecoration:item.completed?'line-through':'none'}}
+                        >{item.id}- {item.name}
                         --{item.completed?'completed':'pending'}
                         <button onClick={()=>handleDelete(item.id)}>X</button>
                         </li>
