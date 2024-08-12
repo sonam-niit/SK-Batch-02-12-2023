@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"alex",
+        "email":"alex@gmail.com",
+        "country":"US",
+        "url":"https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
+    },
+    {
+        "id":2,
+        "name":"bob",
+        "email":"bob@gmail.com",
+        "country":"UK",
+        "url":"https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
+    },
+    {
+        "id":3,
+        "name":"john",
+        "email":"john@gmail.com",
+        "country":"UK",
+        "url":"https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
+    },
+    {
+        "id":4,
+        "name":"jack",
+        "email":"jack@gmail.com",
+        "country":"India",
+        "url":"https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
+    }
+]
