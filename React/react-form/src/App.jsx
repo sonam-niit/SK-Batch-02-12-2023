@@ -1,10 +1,10 @@
-import Login from "./components/LoginForm"
+import UserList from "./components/userlist"
 
 function App() {
 
   return (
     <div className="container">
-      <Login />
+      <UserList />
     </div>
   )
 }
