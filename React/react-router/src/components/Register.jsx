@@ -1,4 +1,5 @@
 function Register() {
+    //create state
     return (
         <div className="container mb-3">
             <h3 className="text-center text-bg-warning p-2">Registration Form</h3>

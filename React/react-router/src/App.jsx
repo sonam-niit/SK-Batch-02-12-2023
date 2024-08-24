@@ -3,6 +3,7 @@ import Header from "./components/header"
 import Home from "./components/home"
 import Login from "./components/Login"
 import Register from "./components/Register"
+import UserList from "./components/userslist"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="" element={<Home />}/>
         <Route path="login" element={<Login />}/>
         <Route path="register" element={<Register />}/>
+        <Route path="list" element={<UserList />}/>
       </Routes>
       {/* Add Footer Here */}
     </BrowserRouter>
