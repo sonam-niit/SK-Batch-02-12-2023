@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function UserList() {
     const [users,setUsers]=useState([]);
@@ -27,6 +28,9 @@ function UserList() {
                         <td>{item.id}</td>
                         <td>{item.name}</td>
                         <td>{item.email}</td>
+                        <td>
+                            <Link to={`/details/${item.id}`}>view</Link>
+                        </td>
                     </tr>
                 ))
             }
