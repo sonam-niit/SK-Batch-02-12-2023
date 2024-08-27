@@ -19,9 +19,8 @@ function App() {
         <Route path="" element={<Home />}/>
         <Route path="login" element={<Login setLoggedIn={setLoggedIn}/>}/>
         <Route path="register" element={<Register />}/>
-        <Route path="list" element={<UserList />}/>
         <Route path="details/:id" element={<UserDetails />}/>
-        <Route path="dashboard" element={<Dashboard />}/>
+        <Route path="dashboard/*" element={<Dashboard />}/>
       </Routes>
       {/* Add Footer Here */}
     </BrowserRouter>

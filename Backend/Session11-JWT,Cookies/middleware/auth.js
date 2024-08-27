@@ -5,7 +5,8 @@ async function auth(req,res,next){
     console.log(cookie)
     if(cookie.token){
         const token=cookie.token;
-        const user= await jwt.verify(token,process.env.JWT_SECRET);
+        const user= await jwt.verify
+        (token,process.env.JWT_SECRET);
         req.user=user;
         next();
     }else{

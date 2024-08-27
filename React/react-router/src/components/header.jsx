@@ -32,9 +32,7 @@ function Header({ loggedIn, setLoggedIn }) {
                                     </li>
                                 </>
                         }
-                        <li className="nav-item">
-                            <Link className="nav-link" to="list">UserList</Link>
-                        </li>
+                        
                     </ul>
 
                 </div>
